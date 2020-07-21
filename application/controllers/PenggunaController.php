@@ -45,10 +45,12 @@ class PenggunaController extends CI_Controller {
 		$this->form_validation->set_rules('nama', 'Nama', 'trim|required', [
 			'required' => 'Masukkan nama!'
 		]);
+
 		$this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email', [
 			'required' => 'Masukkan email!',
 			'valid_email' => 'Email tidak valid!'
 		]);
+
 		$this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[6]',[
 			'required' => 'Masukkan password!',
 			'min_length' => 'Password kurang dari 6 karakter!'

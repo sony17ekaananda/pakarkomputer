@@ -39,12 +39,12 @@
 
 
       <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="<?php echo base_url('role/list'); ?>"  aria-expanded="true" aria-controls="collapseTwo">
+<!--       <li class="nav-item">
+        <a class="nav-link collapsed" href="<?php; ?>"  aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-users"></i>
           <span>Hak Akses</span>
         </a>
-      </li>
+      </li> -->
 
             <!-- Heading -->
       <div class="sidebar-heading">
@@ -90,12 +90,12 @@
 
 
       <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
+<!--       <li class="nav-item">
         <a class="nav-link collapsed" href="#"  aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-history"></i>
           <span>Riwayat</span>
         </a>
-      </li>
+      </li> -->
 
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">

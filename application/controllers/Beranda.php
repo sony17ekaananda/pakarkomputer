@@ -10,9 +10,11 @@ class Beranda extends CI_Controller {
 	public function index()
 	{
 		
-		$data['gejala'] = $this->db->query("SELECT * FROM gejala where kode_ya ='' and kode_tidak ='' ")->row();
+		$data['gejala'] = $this->db->query("SELECT * FROM gejala where kode_ya ='Pilih Kode Gejala' and kode_tidak ='Pilih Kode Gejala' ")->row();
+		$data['content']  = 'page/pengunjung/beranda';
+		$data['title']  = 'Beranda';
 
-		$this->load->view('page/beranda', $data);
+		$this->load->view('page/pengunjung/master',$data);
 	}
 
 	public function diagnosa()

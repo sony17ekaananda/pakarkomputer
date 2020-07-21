@@ -56,7 +56,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['dashboard'] = 'DashboardController/index';
 $route['beranda'] = 'Beranda/index';
-$route['kontak'] = 'Kontak/index';
+$route['kontak'] = 'KontakController/index';
 $route['tentang'] = 'Tentang/index';
 $route['login'] = 'AuthController/showLogin';
 $route['login/aksi_login'] = 'AuthController/aksi_login';

@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Tentang extends CI_Controller {
+class KontakController extends CI_Controller {
 	function __construct(){
 		parent::__construct();
 		$this->load->helper('url');
@@ -10,10 +10,11 @@ class Tentang extends CI_Controller {
 	public function index()
 	{
 		$data  = array(
-			'title' => 'Tentang',
-			'content' => 'page/pengunjung/tentang'
+			'title' => 'Kontak',
+			'content' => 'page/pengunjung/kontak'
 
 		 );
 		$this->load->view('page/pengunjung/master', $data);
+
 	}
 }

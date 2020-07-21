@@ -33,7 +33,7 @@
                           <td>'. $gejala["kode_gejala"] .'</td>
                           <td>'. $gejala["gejala"] .'</td>
                           <td style="text-align:center;">
-                          <a href="'. base_url('GejalaController/doDelete/'. $gejala['id'])  .'" class="btn btn-danger">Delete</a>&nbsp;&nbsp;
+                          <a data-toggle="modal" data-target="#confirm-delete" href="#" data-href="'. base_url('GejalaController/doDelete/'. $gejala['id'])  .'" class="btn btn-danger">Delete</a>&nbsp;&nbsp;
                           <a href="'. base_url('gejala/edit/'. $gejala["id"])  .'" class="btn btn-success">Edit</a></td>
 
                         </tr>';

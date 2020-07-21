@@ -16,7 +16,7 @@
         <div class="col-md-8">
           <div class="form-group">
             <label for="email">Email:</label>
-            <input type="email" name="email" class="form-control" placeholder="Enter email" id="email" value="<?= set_value('email'); ?>">
+            <input type="text" name="email" class="form-control" placeholder="Enter email" id="email" value="<?= set_value('email'); ?>">
                   <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
           </div>
         </div>

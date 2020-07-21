@@ -86,6 +86,23 @@
       </div>
       <!-- End of Main Content -->
 
+      <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    Peringatan
+                </div>
+                <div class="modal-body">
+                    Apakah anda yakin akan menghapus record ini?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-danger btn-ok">Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
       <!-- Footer -->
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
@@ -136,6 +153,11 @@
     <script src="<?php echo base_url("assets/js/demo/datatables-demo.js"); ?>"></script>
   <!-- Page level plugins -->
   <script src="<?php echo base_url('assets/vendor/chart.js/Chart.min.js')  ?>"></script>
+  <script type="text/javascript">
+    $('#confirm-delete').on('show.bs.modal', function(e) {
+      $(this).find('.btn-ok').attr('href', $(e.relatedTarget).data('href'));
+    });
+  </script>
 
 </body>
 
